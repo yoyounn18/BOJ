@@ -1,0 +1,25 @@
+package CodeUp_Basic_100Q;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int intMin [] = new int[scanner.nextInt()];
+		int intSum = 0;
+		int intFinalSum = 0;
+		for(int i = 0; i < intMin.length; i ++) {
+			intMin[i] = scanner.nextInt();
+		}
+		Arrays.sort(intMin);
+		for(int i = 0; i < intMin.length; i ++) {
+			intSum += intMin[i];
+			intFinalSum += intSum;
+		}
+		System.out.println(intFinalSum);
+	}
+
+}
